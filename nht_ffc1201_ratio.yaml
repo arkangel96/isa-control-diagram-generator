@@ -1,0 +1,20 @@
+template: ratio_control
+title: "NHT - H2/HC Ratio Control FFC-1201"
+
+transmitter_wild:
+  tag: FT-1201
+
+ratio_block:
+  tag: FY-1201
+  func: RATIO
+
+transmitter_controlled:
+  tag: FT-1202
+
+controller:
+  tag: FFC-1201
+  action: REVERSE ACTION
+
+valve:
+  tag: FV-1201
+  failure: AO/AFC

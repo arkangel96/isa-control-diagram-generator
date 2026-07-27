@@ -1,0 +1,36 @@
+template: cascade_split_range
+title: "NHT - Charge Heater Temperature Control TC-1101"
+
+primary_transmitter:
+  tag: TT-1101
+
+primary_controller:
+  tag: TC-1101
+  action: REVERSE ACTION
+
+secondary_transmitter:
+  tag: FT-1101
+
+secondary_controller:
+  tag: FC-1101
+  action: REVERSE ACTION
+
+block_b:
+  tag: FY-1101B
+  func: ARTHC
+  range_in: "50%-100%"
+  range_out: "0%-100%"
+
+block_a:
+  tag: FY-1101A
+  func: ARTHC
+  range_in: "0%-50%"
+  range_out: "100%-0%"
+
+valve_b:
+  tag: FV-1101B
+  failure: AO/AFC
+
+valve_a:
+  tag: FV-1101A
+  failure: AO/AFC

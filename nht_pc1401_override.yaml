@@ -1,0 +1,24 @@
+template: override
+title: "NHT - Recycle Compressor Pressure Override PC-1401"
+
+transmitter_normal:
+  tag: PT-1401
+
+controller_normal:
+  tag: PC-1401
+  action: DIRECT ACTION
+
+transmitter_override:
+  tag: PT-1402
+
+controller_override:
+  tag: PC-1402
+  action: REVERSE ACTION
+
+selector:
+  tag: PY-1401
+  selector: ">"
+
+valve:
+  tag: PV-1401
+  failure: AC/AFO

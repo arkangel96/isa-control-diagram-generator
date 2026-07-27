@@ -1,0 +1,29 @@
+template: split_range_arthc
+title: "NHT - Separator Pressure Split-Range PC-1301"
+
+transmitter:
+  tag: PT-1301
+
+controller:
+  tag: PC-1301
+  action: DIRECT ACTION
+
+block_b:
+  tag: PY-1301B
+  func: ARTHC
+  range_in: "50%-100%"
+  range_out: "0%-100%"
+
+block_a:
+  tag: PY-1301A
+  func: ARTHC
+  range_in: "0%-50%"
+  range_out: "100%-0%"
+
+valve_b:
+  tag: PV-1301B
+  failure: AO/AFC
+
+valve_a:
+  tag: PV-1301A
+  failure: AO/AFC

@@ -1,0 +1,27 @@
+template: three_element
+title: "NHT - Stripper Feed Drum Three-Element Level Control LC-1701"
+
+transmitter_level:
+  tag: LT-1701
+
+controller_level:
+  tag: LC-1701
+  action: REVERSE ACTION
+
+transmitter_out:
+  tag: FT-1701
+
+transmitter_in:
+  tag: FT-1702
+
+summer_block:
+  tag: LY-1701
+  func: ARTH
+
+controller_flow:
+  tag: FC-1701
+  action: REVERSE ACTION
+
+valve:
+  tag: LV-1701
+  failure: AO/AFC

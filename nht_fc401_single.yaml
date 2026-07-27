@@ -1,0 +1,13 @@
+template: single_loop
+title: "NHT - Feed Flow Control FC-401"
+
+transmitter:
+  tag: FT-401
+
+controller:
+  tag: FC-401
+  action: REVERSE ACTION
+
+valve:
+  tag: FV-401
+  failure: AO/AFC

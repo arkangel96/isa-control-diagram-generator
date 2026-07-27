@@ -1,0 +1,31 @@
+template: override_cascade
+title: "NHT - Compressor Anti-Surge Override PC-1401/FC-1401"
+
+transmitter_normal:
+  tag: PT-1401
+
+controller_normal:
+  tag: PC-1401
+  action: DIRECT ACTION
+
+transmitter_override:
+  tag: PT-1402
+
+controller_override:
+  tag: PC-1402
+  action: REVERSE ACTION
+
+selector:
+  tag: PY-1401
+  selector: ">"
+
+transmitter_flow:
+  tag: FT-1401
+
+controller_flow:
+  tag: FC-1401
+  action: REVERSE ACTION
+
+valve:
+  tag: FV-1401
+  failure: AC/AFO

@@ -1,0 +1,20 @@
+template: cascade
+title: "NHT - Stripper Level Cascade LC/FC"
+
+primary_transmitter:
+  tag: LT-1701
+
+primary_controller:
+  tag: LC-1701
+  action: REVERSE ACTION
+
+secondary_transmitter:
+  tag: FT-1702
+
+secondary_controller:
+  tag: FC-1702
+  action: REVERSE ACTION
+
+valve:
+  tag: FV-1702
+  failure: AO/AFC
