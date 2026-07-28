@@ -1,0 +1,10 @@
+template: single_loop
+title: "Recycle Compressor Suction Drum Level Control"
+transmitter:
+  tag: LT-007
+controller:
+  tag: LC-007
+  action: DIRECT ACTION
+valve:
+  tag: LCV-007
+  failure: AO/AFC

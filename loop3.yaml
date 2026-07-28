@@ -1,0 +1,15 @@
+template: cascade
+title: "Charge Heater Outlet Temperature Control"
+primary_transmitter:
+  tag: TT-005
+primary_controller:
+  tag: TIC-005
+  action: REVERSE ACTION
+secondary_transmitter:
+  tag: FT-F401
+secondary_controller:
+  tag: HC-F401
+  action: REVERSE ACTION
+valve:
+  tag: FV-F401
+  failure: AO/AFC

@@ -1,0 +1,29 @@
+template: split_range_arthc
+title: "Feed Surge Drum Pressure Control"
+
+transmitter:
+  tag: PT-005
+
+controller:
+  tag: PIC-005
+  action: REVERSE ACTION
+
+block_b:
+  tag: PY-005B
+  func: ARTHC
+  range_in: "50%-100%"
+  range_out: "0%-100%"
+
+block_a:
+  tag: PY-005A
+  func: ARTHC
+  range_in: "0%-50%"
+  range_out: "100%-0%"
+
+valve_b:
+  tag: PV-005A
+  failure: AO/AFC
+
+valve_a:
+  tag: PV-005B
+  failure: AO/AFC

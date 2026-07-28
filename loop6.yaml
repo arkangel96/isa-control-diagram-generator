@@ -1,0 +1,10 @@
+template: single_loop
+title: "Separator HC Liquid Level Control"
+transmitter:
+  tag: LT-004
+controller:
+  tag: LC-004
+  action: DIRECT ACTION
+valve:
+  tag: LCV-004
+  failure: AO/AFC

@@ -70,6 +70,33 @@ def build_svg(canvas_w, canvas_h, draw_fn, data, title=None):
 
     # diagram elements
     lines.extend(svg_elements)
+    # Zone labels (FIELD / DCS / FIELD) — added at bottom-left of diagram
+    zone_y = canvas_h - MARGIN - 18           # y of DCS/FIELD separator line
+    zone_x1 = MARGIN // 2                      # left edge of border
+    zone_x2 = canvas_w - MARGIN // 2           # right edge of border
+
+    lines.append(
+        f'<line x1="{zone_x1}" y1="{zone_y}" x2="{zone_x2}" y2="{zone_y}" '
+        f'stroke="#555555" stroke-width="0.7" stroke-dasharray="5,3"/>')
+    lines.append(
+        f'<text x="{zone_x1 + 4}" y="{zone_y - 4}" '
+        f'font-family="{TITLE_FONT}" font-size="9" fill="#444">DCS</text>')
+    lines.append(
+        f'<text x="{zone_x1 + 4}" y="{zone_y + 13}" '
+        f'font-family="{TITLE_FONT}" font-size="9" fill="#444">FIELD</text>')
+    # upper zone separator (FIELD transmitters above DCS controllers)
+    upper_y = MARGIN + 18
+    lines.append(
+        f'<line x1="{zone_x1}" y1="{upper_y}" x2="{zone_x2}" y2="{upper_y}" '
+        f'stroke="#555555" stroke-width="0.7" stroke-dasharray="5,3"/>')
+    lines.append(
+        f'<text x="{zone_x1 + 4}" y="{upper_y - 4}" '
+        f'font-family="{TITLE_FONT}" font-size="9" fill="#444">FIELD</text>')
+    lines.append(
+        f'<text x="{zone_x1 + 4}" y="{upper_y + 13}" '
+        f'font-family="{TITLE_FONT}" font-size="9" fill="#444">DCS</text>')
+
+
 
     lines.append('</svg>')
     return "\n".join(lines)

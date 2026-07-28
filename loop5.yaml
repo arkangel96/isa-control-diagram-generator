@@ -1,0 +1,10 @@
+template: single_loop
+title: "Separator Pressure Control"
+transmitter:
+  tag: PT-015
+controller:
+  tag: PIC-015
+  action: DIRECT ACTION
+valve:
+  tag: PCV-015
+  failure: AO/AFC

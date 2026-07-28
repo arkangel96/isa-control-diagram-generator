@@ -1,0 +1,15 @@
+template: cascade
+title: "Stripper Reboiler Heater Outlet Temperature Control"
+primary_transmitter:
+  tag: TT-025
+primary_controller:
+  tag: TIC-025
+  action: REVERSE ACTION
+secondary_transmitter:
+  tag: FT-F402
+secondary_controller:
+  tag: HC-F402
+  action: REVERSE ACTION
+valve:
+  tag: FV-017A
+  failure: AO/AFC

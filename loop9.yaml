@@ -1,0 +1,15 @@
+template: cascade
+title: "Naphtha Splitter Overhead Temperature Control"
+primary_transmitter:
+  tag: TT-031
+primary_controller:
+  tag: TIC-031
+  action: DIRECT ACTION
+secondary_transmitter:
+  tag: FT-026
+secondary_controller:
+  tag: FC-026
+  action: REVERSE ACTION
+valve:
+  tag: FCV-026
+  failure: AO/AFC

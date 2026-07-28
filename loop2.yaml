@@ -1,0 +1,20 @@
+template: cascade
+title: "Stripper Overhead Temperature Cascade"
+
+primary_transmitter:
+  tag: TT-020
+
+primary_controller:
+  tag: TIC-020
+  action: REVERSE ACTION
+
+secondary_transmitter:
+  tag: FT-022
+
+secondary_controller:
+  tag: FC-022
+  action: REVERSE ACTION
+
+valve:
+  tag: FCV-022
+  failure: AO/AFC

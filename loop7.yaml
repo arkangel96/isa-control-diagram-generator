@@ -1,0 +1,10 @@
+template: single_loop
+title: "Separator Boot Sour Water Level Control"
+transmitter:
+  tag: LT-005
+controller:
+  tag: LC-005
+  action: DIRECT ACTION
+valve:
+  tag: LCV-005
+  failure: AO/AFC

@@ -1,0 +1,23 @@
+template: split_range_arthc
+title: "Products Condenser Pressure Control"
+transmitter:
+  tag: PT-012
+controller:
+  tag: PC-012
+  action: REVERSE ACTION
+block_b:
+  tag: PY-012B
+  func: ARTHC
+  range_in: "50%-100%"
+  range_out: "0%-100%"
+block_a:
+  tag: PY-012A
+  func: ARTHC
+  range_in: "0%-50%"
+  range_out: "100%-0%"
+valve_b:
+  tag: PV-012B
+  failure: AO/AFC
+valve_a:
+  tag: PV-012A
+  failure: AO/AFC
